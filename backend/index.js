@@ -4,13 +4,20 @@ const auth_router = require("./router/auth");
 const public_router = require("./router/public");
 const doctor_router = require("./router/doctor");
 const cookieParser = require("cookie-parser");
-const cors = require("cors");
+
 const morgan = require('morgan');
 require("dotenv").config();
 const mongoose_connection = require("./db/connection");
 const patient_router = require("./router/patient");
 const doctor = require("./model/doctor");
 const app = express();
+const cors = require("cors");
+
+app.use(cors({
+  origin: "https://hospital-appointment-booking-system-lac.vercel.app", // your frontend URL
+  credentials: true
+}));
+
 const PORT = process.env.PORT || 8080;
 app.use(cors({credentials: true, origin: true}));
 mongoose_connection(app);
