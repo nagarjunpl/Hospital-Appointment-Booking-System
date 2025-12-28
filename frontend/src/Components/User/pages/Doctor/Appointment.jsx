@@ -77,7 +77,7 @@ export default function Cart() {
     publicKey: "test_public_key_2a7f2e2188034b8c8afe09bba670bd67",
     productIdentity: "123766",
     productName: "My Ecommerce Store",
-    productUrl: "https://hospital-appointment-booking-system-6hcp.onrender.com/api",
+    productUrl: "http://localhost:3000",
     eventHandler: {
       onSuccess(payload) {
         console.log(payload);
