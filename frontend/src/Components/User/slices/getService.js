@@ -7,7 +7,7 @@ import { createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 }
 
  export const getservice=createAsyncThunk("getService", async()=>{
-    const res=await fetch("http://localhost:8080/public/service")
+    const res=await fetch("https://hospital-appointment-booking-system-6hcp.onrender.com/public/service")
     const data=res.json()
     return data
 

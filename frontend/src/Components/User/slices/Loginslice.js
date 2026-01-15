@@ -13,7 +13,7 @@ export const loginAsync = createAsyncThunk(
   'login/loginAsync',
   async (credentials, { rejectWithValue }) => {
     try {
-      const response = await axios.post("http://localhost:8080/signin", credentials);
+      const response = await axios.post("https://hospital-appointment-booking-system-6hcp.onrender.com/signin", credentials);
       console.log(response)
       
       if (response.data.token !== undefined) {

@@ -31,7 +31,7 @@ const ContactUsPage = () => {
       contact,
     };
     try {
-      const response = await axios.post('http://localhost:8080/patient/patientmessage', data);
+      const response = await axios.post('https://hospital-appointment-booking-system-6hcp.onrender.com/patient/patientmessage', data);
       if (response.status === 200) {
         toast.success(response.data.message);
         navigate("/");
