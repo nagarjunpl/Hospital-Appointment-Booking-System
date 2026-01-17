@@ -75,20 +75,3 @@ A Hospital Management System built using the MERN Stack that helps manage hospit
 ## 🌐 Live Demo
 https://hospital-appointment-booking-system-lac.vercel.app/
 
----
-
-## 📦 Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/hospital-management-system.git
-
-# Backend setup
-cd backend
-npm install
-npm start
-
-# Frontend setup
-cd ../frontend
-npm install
-npm run dev
